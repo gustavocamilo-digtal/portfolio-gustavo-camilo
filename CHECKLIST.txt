@@ -1,0 +1,11 @@
+CHECKLIST PESSOAL ANTES DE ENVIAR AO PROFESSOR
+
+[ ] Conferi meu nome, meus e-mails e as informações pessoais.
+[ ] Abri as sete páginas e li os textos.
+[ ] Testei o menu e todos os links no computador.
+[ ] Testei o layout em um celular ou usando a visualização responsiva do navegador.
+[ ] Conferi se as imagens aparecem corretamente.
+[ ] Extraí o ZIP em outra pasta e abri o index.html novamente.
+[ ] Li os comentários do HTML, CSS e JavaScript e pratiquei explicar os principais comandos.
+[ ] Confirmei com o professor se as imagens ilustrativas geradas por IA podem ser utilizadas.
+[ ] O arquivo ZIP está com o nome solicitado para a entrega.

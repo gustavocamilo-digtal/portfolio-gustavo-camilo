@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- HTML5 informa ao navegador que o documento usa a versão atual da linguagem HTML. -->
+<html lang="pt-BR"> <!-- lang informa o idioma principal para navegadores e leitores de tela. -->
+<head>
+    <!-- Autor: Gustavo Camilo | Projeto acadêmico de Front End - HTML, CSS e JavaScript. -->
+    <!-- UTF-8 permite exibir corretamente acentos e caracteres especiais do português. -->
+    <meta charset="UTF-8">
+    <!-- A viewport faz a página adaptar sua largura à tela do dispositivo. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio acadêmico de Gustavo Camilo, estudante do Ensino Médio Técnico em Internet das Coisas no Senac Nações Unidas.">
+    <title>Jornada de Aprendizagem | Portfólio de Gustavo Camilo</title>
+    <!-- link conecta esta página à folha CSS, onde ficam cores, tamanhos e posicionamento. -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- defer faz o navegador carregar o JavaScript sem bloquear a leitura do HTML. -->
+    <script src="js/script.js" defer></script>
+</head>
+<body id="top">
+    <!-- CABEÇALHO E NAVEGAÇÃO PRINCIPAL. -->
+    <header class="site-header">
+        <a class="logo" href="index.html">GUSTAVO CAMILO<span>.</span></a>
+        <!-- Botão do menu mobile: JavaScript controla sua abertura e fechamento em telas estreitas. -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+            <span></span><span></span><span></span>
+        </button>
+        <!-- nav agrupa links de navegação; aria-current marca a página que está aberta. -->
+        <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+<a href="areas.html">Áreas do Saber</a>
+<a href="formacao.html">Formação Técnica</a>
+<a href="curriculo.html">Currículo</a>
+<a href="memorias.html">Memórias</a>
+<a href="jornada.html" class="active" aria-current="page">Jornada</a>
+<a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <!-- CONTEÚDO PRINCIPAL DA LINHA DO TEMPO. -->
+    <main class="page-main">
+        <!-- INTRODUÇÃO DA JORNADA: apresenta a ideia de evolução ao longo do curso. -->
+        <section class="page-hero"><p class="eyebrow">PROCESSO DE APRENDIZAGEM</p><h1>Minha <span>jornada.</span></h1><p class="lead">Aprender envolve testar ideias, lidar com dificuldades, trabalhar com outras pessoas e reconhecer o que ainda pode melhorar.</p></section>
+<!-- LINHA DO TEMPO: cada timeline-item representa uma etapa ou experiência da trajetória. -->
+<section class="timeline">
+    <!-- ETAPA: marcador visual, categoria, título e descrição de uma experiência. -->
+    <article class="timeline-item"><span class="timeline-marker"></span><div class="timeline-content"><p class="eyebrow">FORMAÇÃO TÉCNICA</p><h2>Contato com tecnologias e fundamentos</h2><p>Ao longo do curso, desenvolvi conhecimentos de programação, Arduino, ESP32, sensores, montagem de circuitos e bancos de dados.</p></div></article>
+    <article class="timeline-item"><span class="timeline-marker"></span><div class="timeline-content"><p class="eyebrow">PROJETOS PRÁTICOS</p><h2>Transformar conteúdos em protótipos</h2><p>Desenvolvi uma esteira que utiliza sensor para detectar peças, identificar cores e contabilizar unidades, além de um cofre inteligente controlado por senha, com display LCD e servo motor.</p></div></article>
+    <article class="timeline-item"><span class="timeline-marker"></span><div class="timeline-content"><p class="eyebrow">EXPERIÊNCIAS ESCOLARES</p><h2>Apresentar, colaborar e participar</h2><p>Participei de trabalhos e apresentações nas áreas do conhecimento, incluindo uma performance artística na Mostra de Artes e a exposição de projetos no evento Conexões.</p></div></article>
+    <article class="timeline-item"><span class="timeline-marker"></span><div class="timeline-content"><p class="eyebrow">10/11/2026 • CONEXÕES</p><h2>Uma conquista na competição</h2><p>Conquistei o 1º lugar na batalha de carrinhos robóticos. O carrinho foi fornecido já montado; a experiência marcou minha participação no evento e o resultado alcançado.</p></div></article>
+</section>
+
+    </main>
+    <!-- RODAPÉ: identifica o autor e oferece um link para voltar ao topo da página. -->
+    <footer class="site-footer">
+        <p>Gustavo Camilo • Portfólio acadêmico • 2026</p>
+        <!-- onclick executa JavaScript ao clicar; scrollTo retorna ao topo com rolagem suave. -->
+        <a href="#top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Voltar ao topo ↑</a>
+    </footer>
+</body>
+</html>

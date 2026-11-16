@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- HTML5 informa ao navegador que o documento usa a versão atual da linguagem HTML. -->
+<html lang="pt-BR"> <!-- lang informa o idioma principal para navegadores e leitores de tela. -->
+<head>
+    <!-- Autor: Gustavo Camilo | Projeto acadêmico de Front End - HTML, CSS e JavaScript. -->
+    <!-- UTF-8 permite exibir corretamente acentos e caracteres especiais do português. -->
+    <meta charset="UTF-8">
+    <!-- A viewport faz a página adaptar sua largura à tela do dispositivo. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio acadêmico de Gustavo Camilo, estudante do Ensino Médio Técnico em Internet das Coisas no Senac Nações Unidas.">
+    <title>Início | Portfólio de Gustavo Camilo</title>
+    <!-- link conecta esta página à folha CSS, onde ficam cores, tamanhos e posicionamento. -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- defer faz o navegador carregar o JavaScript sem bloquear a leitura do HTML. -->
+    <script src="js/script.js" defer></script>
+</head>
+<body id="top">
+    <!-- CABEÇALHO: contém a marca do portfólio e o menu que leva às outras páginas. -->
+    <header class="site-header">
+        <a class="logo" href="index.html">GUSTAVO CAMILO<span>.</span></a>
+        <!-- Botão do menu mobile: JavaScript controla sua abertura e fechamento em telas estreitas. -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+            <span></span><span></span><span></span>
+        </button>
+        <!-- nav agrupa links de navegação; aria-current marca a página que está aberta. -->
+        <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+            <a href="index.html" class="active" aria-current="page">Início</a>
+<a href="areas.html">Áreas do Saber</a>
+<a href="formacao.html">Formação Técnica</a>
+<a href="curriculo.html">Currículo</a>
+<a href="memorias.html">Memórias</a>
+<a href="jornada.html">Jornada</a>
+<a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <!-- CONTEÚDO PRINCIPAL: reúne as seções específicas da página inicial. -->
+    <main class="page-main">
+        <!-- APRESENTAÇÃO: título, resumo, botões de navegação e fotografia do autor. -->
+        <section class="hero">
+    <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse"></span> GUSTAVO CAMILO • PORTFÓLIO ACADÊMICO • 2026</p>
+        <h1>Olá, eu sou<br><span>Gustavo Camilo.</span></h1>
+        <p class="lead">Sou estudante do 3º ano do Ensino Médio Técnico em Internet das Coisas no Senac Nações Unidas. Este portfólio apresenta parte da minha trajetória, dos projetos e das experiências que construí durante o curso.</p>
+        <div class="actions">
+            <a class="button primary" href="formacao.html">Explorar projetos <span aria-hidden="true">↗</span></a>
+            <a class="button secondary" href="jornada.html">Ver minha jornada</a>
+        </div>
+        <div class="chips"><span>Internet das Coisas</span><span>Programação</span><span>Eletrônica</span></div>
+    </div>
+    <!-- FOTO: a tag img carrega a imagem local; alt descreve a foto para acessibilidade. -->
+    <div class="portrait-frame" aria-label="Fotografia de Gustavo Camilo">
+        <img class="profile-photo" src="assets/img/foto-perfil.webp" alt="Fotografia de Gustavo Camilo">
+        <i class="ring ring-a"></i><i class="ring ring-b"></i>
+    </div>
+</section>
+<!-- DESTAQUES: pequenos cartões resumem informações importantes da trajetória. -->
+<section class="stats">
+    <article class="stat"><strong>3º</strong><span>Ano do Ensino Médio</span></article>
+    <article class="stat"><strong>IoT</strong><span>Formação técnica</span></article>
+    <article class="stat"><strong>1º lugar</strong><span>Batalha de carrinhos robóticos</span></article>
+</section>
+<!-- SOBRE MIM: seção em duas colunas com apresentação pessoal e formação. -->
+<section class="split-section">
+    <div><p class="eyebrow">QUEM SOU EU</p><h2>Aprender, experimentar<br>e <span>evoluir.</span></h2></div>
+    <div class="prose"><p>Sou estudante do 3º ano do Ensino Médio Técnico em Internet das Coisas no Senac Nações Unidas. Durante essa formação, tive contato com Arduino, ESP32, sensores, programação, montagem de circuitos e bancos de dados.</p><p>Este portfólio reúne registros da minha aprendizagem, projetos técnicos, trabalhos das áreas do conhecimento e experiências que contribuíram para meu desenvolvimento escolar.</p></div>
+</section>
+<!-- CONQUISTA: destaca o resultado alcançado no evento Conexões. -->
+<section class="feature-banner">
+    <div class="trophy" aria-hidden="true">🏆</div>
+    <div><p class="eyebrow">EVENTO CONEXÕES • 10/11/2026</p><h2>1º lugar na batalha de carrinhos robóticos</h2><p>Participei da competição durante a mostra de projetos tecnológicos. O carrinho foi disponibilizado já montado para a disputa; a conquista registra minha participação e o resultado alcançado no evento.</p></div>
+</section>
+<!-- ATALHOS: cartões clicáveis direcionam o visitante às páginas internas. -->
+<section class="section-block">
+    <div class="section-title"><div><p class="eyebrow">NAVEGUE PELO PORTFÓLIO</p><h2>Conheça cada parte</h2></div></div>
+    <div class="card-grid">
+        <a class="card" href="areas.html"><span class="card-icon">◈</span><h3>Áreas do Saber</h3><p>Experiências nas quatro áreas do conhecimento.</p><span class="card-link">Acessar seção ↗</span></a>
+        <a class="card" href="formacao.html"><span class="card-icon">⌘</span><h3>Formação Técnica</h3><p>Projetos, tecnologias, funcionamento e aprendizados em IoT.</p><span class="card-link">Acessar seção ↗</span></a>
+        <a class="card" href="memorias.html"><span class="card-icon">▧</span><h3>Memórias</h3><p>Eventos, atividades, apresentações e registros visuais.</p><span class="card-link">Acessar seção ↗</span></a>
+    </div>
+</section>
+    </main>
+    <!-- RODAPÉ: identifica o autor e oferece um link para voltar ao topo da página. -->
+    <footer class="site-footer">
+        <p>Gustavo Camilo • Portfólio acadêmico • 2026</p>
+        <!-- onclick executa JavaScript ao clicar; scrollTo retorna ao topo com rolagem suave. -->
+        <a href="#top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Voltar ao topo ↑</a>
+    </footer>
+</body>
+</html>

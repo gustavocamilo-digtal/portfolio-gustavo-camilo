@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- HTML5 informa ao navegador que o documento usa a versão atual da linguagem HTML. -->
+<html lang="pt-BR"> <!-- lang informa o idioma principal para navegadores e leitores de tela. -->
+<head>
+    <!-- Autor: Gustavo Camilo | Projeto acadêmico de Front End - HTML, CSS e JavaScript. -->
+    <!-- UTF-8 permite exibir corretamente acentos e caracteres especiais do português. -->
+    <meta charset="UTF-8">
+    <!-- A viewport faz a página adaptar sua largura à tela do dispositivo. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio acadêmico de Gustavo Camilo, estudante do Ensino Médio Técnico em Internet das Coisas no Senac Nações Unidas.">
+    <title>Memórias | Portfólio de Gustavo Camilo</title>
+    <!-- link conecta esta página à folha CSS, onde ficam cores, tamanhos e posicionamento. -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- defer faz o navegador carregar o JavaScript sem bloquear a leitura do HTML. -->
+    <script src="js/script.js" defer></script>
+</head>
+<body id="top">
+    <!-- CABEÇALHO E MENU COMPARTILHADOS COM AS OUTRAS PÁGINAS. -->
+    <header class="site-header">
+        <a class="logo" href="index.html">GUSTAVO CAMILO<span>.</span></a>
+        <!-- Botão do menu mobile: JavaScript controla sua abertura e fechamento em telas estreitas. -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+            <span></span><span></span><span></span>
+        </button>
+        <!-- nav agrupa links de navegação; aria-current marca a página que está aberta. -->
+        <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+<a href="areas.html">Áreas do Saber</a>
+<a href="formacao.html">Formação Técnica</a>
+<a href="curriculo.html">Currículo</a>
+<a href="memorias.html" class="active" aria-current="page">Memórias</a>
+<a href="jornada.html">Jornada</a>
+<a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <!-- CONTEÚDO PRINCIPAL DA PÁGINA DE MEMÓRIAS. -->
+    <main class="page-main">
+        <!-- INTRODUÇÃO: explica que esta página reúne eventos e experiências. -->
+        <section class="page-hero"><p class="eyebrow">REGISTROS E EXPERIÊNCIAS</p><h1>Minhas <span>memórias.</span></h1><p class="lead">Uma coleção de momentos, atividades e experiências que ajudam a contar como foi minha aprendizagem durante o Ensino Médio Técnico.</p></section>
+<!-- MEMÓRIA DE EVENTO: bloco com data, nome do evento e relato da participação. -->
+<section class="memory-feature"><div class="memory-date">10 NOV<br><strong>2026</strong></div><div><p class="eyebrow">EVENTO DE TECNOLOGIA</p><h2>Conexões</h2><p>Mostra de exposição de projetos de diferentes tipos de tecnologia. Durante o evento, participei da batalha de carrinhos robóticos e conquistei o 1º lugar.</p></div></section>
+<section class="memory-feature"><div class="memory-date">2026<br><strong>ARTES</strong></div><div><p class="eyebrow">LINGUAGENS</p><h2>Mostra de Artes</h2><p>Participei de uma performance artística preparada em grupo e apresentada durante a mostra. A experiência envolveu planejamento, colaboração e expressão artística.</p></div></section>
+<!-- GALERIA: imagens em grade; figure associa cada imagem à sua legenda. -->
+<section class="section-block"><div class="section-title"><div><p class="eyebrow">GALERIA</p><h2>Registros de projetos e atividades</h2></div></div>
+<!-- GRADE DE FOTOS: cada figure contém uma imagem e uma figcaption explicativa. -->
+<div class="gallery">
+    <figure><img src="assets/img/esteira-identificacao-cores.webp" alt="Interface de identificação de cores da esteira" loading="lazy"><figcaption>Esteira — interface de identificação de cores.</figcaption></figure>
+    <figure><img src="assets/img/cofre-circuito.webp" alt="Esquema do circuito do cofre inteligente" loading="lazy"><figcaption>Cofre inteligente — esquema do circuito.</figcaption></figure>
+    <figure><img src="assets/img/cofre-montagem.webp" alt="Montagem eletrônica do cofre inteligente" loading="lazy"><figcaption>Cofre inteligente — registro da montagem.</figcaption></figure>
+    <figure><img src="assets/img/ilustracao-humanas.webp" alt="Ilustração de uma conferência internacional, usada como imagem de apoio" loading="lazy"><figcaption>Imagem ilustrativa gerada por IA — não é foto do evento.</figcaption></figure><figure><img src="assets/img/ilustracao-linguagens.webp" alt="Ilustração de apresentação artística em palco, usada como imagem de apoio" loading="lazy"><figcaption>Imagem ilustrativa gerada por IA — não é foto da apresentação.</figcaption></figure><figure><img src="assets/img/ilustracao-natureza.webp" alt="Ilustração de cogumelos decorativos iluminados, usada como imagem de apoio" loading="lazy"><figcaption>Imagem ilustrativa gerada por IA — não é foto do trabalho.</figcaption></figure>
+</div></section>
+
+    </main>
+    <!-- RODAPÉ: identifica o autor e oferece um link para voltar ao topo da página. -->
+    <footer class="site-footer">
+        <p>Gustavo Camilo • Portfólio acadêmico • 2026</p>
+        <!-- onclick executa JavaScript ao clicar; scrollTo retorna ao topo com rolagem suave. -->
+        <a href="#top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Voltar ao topo ↑</a>
+    </footer>
+</body>
+</html>

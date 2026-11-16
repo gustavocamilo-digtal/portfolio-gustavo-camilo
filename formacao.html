@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- HTML5 informa ao navegador que o documento usa a versão atual da linguagem HTML. -->
+<html lang="pt-BR"> <!-- lang informa o idioma principal para navegadores e leitores de tela. -->
+<head>
+    <!-- Autor: Gustavo Camilo | Projeto acadêmico de Front End - HTML, CSS e JavaScript. -->
+    <!-- UTF-8 permite exibir corretamente acentos e caracteres especiais do português. -->
+    <meta charset="UTF-8">
+    <!-- A viewport faz a página adaptar sua largura à tela do dispositivo. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio acadêmico de Gustavo Camilo, estudante do Ensino Médio Técnico em Internet das Coisas no Senac Nações Unidas.">
+    <title>Formação Técnica | Portfólio de Gustavo Camilo</title>
+    <!-- link conecta esta página à folha CSS, onde ficam cores, tamanhos e posicionamento. -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- defer faz o navegador carregar o JavaScript sem bloquear a leitura do HTML. -->
+    <script src="js/script.js" defer></script>
+</head>
+<body id="top">
+    <!-- CABEÇALHO: marca do site e links de navegação. -->
+    <header class="site-header">
+        <a class="logo" href="index.html">GUSTAVO CAMILO<span>.</span></a>
+        <!-- Botão do menu mobile: JavaScript controla sua abertura e fechamento em telas estreitas. -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+            <span></span><span></span><span></span>
+        </button>
+        <!-- nav agrupa links de navegação; aria-current marca a página que está aberta. -->
+        <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+<a href="areas.html">Áreas do Saber</a>
+<a href="formacao.html" class="active" aria-current="page">Formação Técnica</a>
+<a href="curriculo.html">Currículo</a>
+<a href="memorias.html">Memórias</a>
+<a href="jornada.html">Jornada</a>
+<a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <!-- CONTEÚDO PRINCIPAL DA FORMAÇÃO TÉCNICA. -->
+    <main class="page-main">
+        <!-- INTRODUÇÃO: apresenta a formação em IoT e as tecnologias estudadas. -->
+        <section class="page-hero"><p class="eyebrow">ENSINO MÉDIO TÉCNICO</p><h1>Formação <span>técnica.</span></h1><p class="lead">Na formação em Internet das Coisas, tive contato com programação, eletrônica, sensores, microcontroladores e integração entre componentes.</p><div class="chips"><span>Arduino</span><span>ESP32</span><span>Sensores</span><span>Banco de dados</span><span>Programação</span></div></section>
+<!-- LISTA DE PROJETOS: cada article é um projeto independente com imagem e explicação. -->
+<section class="project-list">
+    <article class="project-card">
+        <!-- ÁREA DE MÍDIA: exibe a foto ou imagem associada ao projeto. -->
+        <div class="project-media"><img src="assets/img/esteira-identificacao-cores.webp" alt="Registro visual da interface de identificação de cores da esteira" loading="lazy"></div>
+        <!-- DESCRIÇÃO: agrupa objetivo, funcionamento, tecnologias e aprendizados do projeto. -->
+        <div class="project-content"><p class="eyebrow">PROJETO 01</p><h2>Esteira de identificação e contagem de peças</h2><p><strong>Objetivo:</strong> desenvolver um sistema que detecta peças, identifica suas cores e contabiliza a quantidade.</p><p><strong>Funcionamento:</strong> a detecção das peças é feita por sensor. O sistema identifica e contabiliza as peças; não realiza a separação automática por cor.</p><p><strong>Aprendizados:</strong> utilização de sensores, lógica de programação, identificação de cores e integração de componentes.</p><p class="tech-line"><strong>Tecnologias:</strong> sensor, programação e componentes eletrônicos. A atividade envolveu a leitura das informações do sensor e o processamento dos dados para identificar e contabilizar as peças.</p></div>
+    </article>
+    <article class="project-card reverse">
+        <div class="project-media double-media"><img src="assets/img/cofre-circuito.webp" alt="Esquema eletrônico do projeto de cofre inteligente" loading="lazy"><img src="assets/img/cofre-montagem.webp" alt="Registro da montagem eletrônica do cofre inteligente" loading="lazy"></div>
+        <div class="project-content"><p class="eyebrow">PROJETO 02</p><h2>Cofre inteligente</h2><p><strong>Objetivo:</strong> criar um mecanismo de acesso controlado por senha.</p><p><strong>Funcionamento:</strong> o usuário digita a senha em um teclado matricial. O display LCD apresenta mensagens ao usuário e o servo motor realiza o movimento de abertura ou fechamento do mecanismo.</p><p><strong>Aprendizados:</strong> programação com condições, leitura de entradas, comunicação com display e acionamento de servo motor.</p><p class="tech-line"><strong>Componentes identificados no registro:</strong> Arduino UNO, teclado matricial, display LCD e servo motor.</p></div>
+    </article>
+    <article class="project-card">
+        <div class="project-media"><img src="assets/img/batalha-carrinhos-ia.webp" alt="Imagem ilustrativa gerada por IA de dois carrinhos robóticos em uma arena de competição" loading="lazy"></div>
+        <div class="project-content"><p class="eyebrow">EVENTO CONEXÕES • 10/11/2026</p><h2>Batalha de carrinhos robóticos</h2><p><strong>Participação:</strong> participei da competição de batalha de carrinhos robóticos realizada durante o evento Conexões, uma mostra de projetos e tecnologias.</p><p><strong>Resultado:</strong> conquistei o 1º lugar. O carrinho utilizado na disputa já foi disponibilizado montado, portanto este registro destaca a participação e o resultado, sem atribuir a mim a construção do veículo.</p></div>
+    </article>
+</section>
+    </main>
+    <!-- RODAPÉ: identifica o autor e oferece um link para voltar ao topo da página. -->
+    <footer class="site-footer">
+        <p>Gustavo Camilo • Portfólio acadêmico • 2026</p>
+        <!-- onclick executa JavaScript ao clicar; scrollTo retorna ao topo com rolagem suave. -->
+        <a href="#top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Voltar ao topo ↑</a>
+    </footer>
+</body>
+</html>

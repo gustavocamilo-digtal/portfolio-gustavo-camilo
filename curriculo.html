@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- HTML5 informa ao navegador que o documento usa a versão atual da linguagem HTML. -->
+<html lang="pt-BR"> <!-- lang informa o idioma principal para navegadores e leitores de tela. -->
+<head>
+    <!-- Autor: Gustavo Camilo | Projeto acadêmico de Front End - HTML, CSS e JavaScript. -->
+    <!-- UTF-8 permite exibir corretamente acentos e caracteres especiais do português. -->
+    <meta charset="UTF-8">
+    <!-- A viewport faz a página adaptar sua largura à tela do dispositivo. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio acadêmico de Gustavo Camilo, estudante do Ensino Médio Técnico em Internet das Coisas no Senac Nações Unidas.">
+    <title>Currículo | Portfólio de Gustavo Camilo</title>
+    <!-- link conecta esta página à folha CSS, onde ficam cores, tamanhos e posicionamento. -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- defer faz o navegador carregar o JavaScript sem bloquear a leitura do HTML. -->
+    <script src="js/script.js" defer></script>
+</head>
+<body id="top">
+    <!-- CABEÇALHO E NAVEGAÇÃO PRINCIPAL. -->
+    <header class="site-header">
+        <a class="logo" href="index.html">GUSTAVO CAMILO<span>.</span></a>
+        <!-- Botão do menu mobile: JavaScript controla sua abertura e fechamento em telas estreitas. -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+            <span></span><span></span><span></span>
+        </button>
+        <!-- nav agrupa links de navegação; aria-current marca a página que está aberta. -->
+        <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+<a href="areas.html">Áreas do Saber</a>
+<a href="formacao.html">Formação Técnica</a>
+<a href="curriculo.html" class="active" aria-current="page">Currículo</a>
+<a href="memorias.html">Memórias</a>
+<a href="jornada.html">Jornada</a>
+<a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <!-- CONTEÚDO PRINCIPAL DO CURRÍCULO ACADÊMICO. -->
+    <main class="page-main">
+        <!-- APRESENTAÇÃO: título e resumo do perfil acadêmico. -->
+        <section class="page-hero"><p class="eyebrow">PERFIL ACADÊMICO</p><h1>Meu <span>currículo.</span></h1><p class="lead">Uma síntese da minha formação escolar, dos conhecimentos técnicos e das experiências que fazem parte da minha trajetória.</p></section>
+<!-- QUADROS DO CURRÍCULO: cards separados para formação, conhecimentos e experiências. -->
+<section class="resume-layout">
+    <!-- CARD: cada article representa um grupo de informações do currículo. -->
+    <article class="panel"><p class="eyebrow">FORMAÇÃO</p><h2>Ensino Médio Técnico</h2><p><strong>Curso:</strong> Técnico em Internet das Coisas (IoT), integrado ao Ensino Médio.</p><p><strong>Etapa:</strong> 3º ano.</p><p><strong>Instituição:</strong> Senac Nações Unidas.</p></article>
+    <article class="panel"><p class="eyebrow">CONHECIMENTOS TÉCNICOS</p><h2>Competências em desenvolvimento</h2><ul class="check-list"><li>Programação</li><li>Arduino e ESP32</li><li>Utilização de sensores</li><li>Montagem de circuitos eletrônicos</li><li>Banco de dados</li><li>Desenvolvimento de projetos práticos</li></ul></article>
+    <article class="panel"><p class="eyebrow">PROJETOS E EXPERIÊNCIAS</p><h2>Prática e colaboração</h2><ul class="check-list"><li>Esteira de identificação de cores e contagem de peças</li><li>Cofre inteligente com senha, LCD e servo motor</li><li>Participação no evento Conexões e 1º lugar na batalha de carrinhos robóticos</li><li>Performance artística na Mostra de Artes</li></ul></article>
+    
+</section>
+
+    </main>
+    <!-- RODAPÉ: identifica o autor e oferece um link para voltar ao topo da página. -->
+    <footer class="site-footer">
+        <p>Gustavo Camilo • Portfólio acadêmico • 2026</p>
+        <!-- onclick executa JavaScript ao clicar; scrollTo retorna ao topo com rolagem suave. -->
+        <a href="#top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Voltar ao topo ↑</a>
+    </footer>
+</body>
+</html>
